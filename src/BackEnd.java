@@ -9,7 +9,7 @@ public class BackEnd {
 
     public static void initialize(){
         // Reading file from local directory
-        FileInputStream file = null;
+        FileInputStream file;
         try {
             file = new FileInputStream(
                     fileI);
@@ -17,7 +17,7 @@ public class BackEnd {
             throw new RuntimeException(ex);
         }
         // Create Workbook instance holding reference to .xlsx file
-        XSSFWorkbook workbook = null;
+        XSSFWorkbook workbook;
         try {
             workbook = new XSSFWorkbook(file);
         } catch (IOException ex) {
@@ -53,7 +53,7 @@ public class BackEnd {
             throw new RuntimeException(ex);
         }
         // Writing the workbook
-        FileOutputStream out = null;
+        FileOutputStream out;
         try {
             out = new FileOutputStream(
                     fileI);
@@ -97,7 +97,7 @@ public class BackEnd {
 
     public static void saveResults() {
         // Reading file from local directory
-        FileInputStream file = null;
+        FileInputStream file;
         try {
             file = new FileInputStream(
                     fileI);
@@ -105,7 +105,7 @@ public class BackEnd {
             throw new RuntimeException(ex);
         }
         // Create Workbook instance holding reference to .xlsx file
-        XSSFWorkbook workbook = null;
+        XSSFWorkbook workbook;
         try {
             workbook = new XSSFWorkbook(file);
         } catch (IOException ex) {
@@ -142,7 +142,7 @@ public class BackEnd {
             throw new RuntimeException(ex);
         }
         // Writing the workbook
-        FileOutputStream out = null;
+        FileOutputStream out;
         try {
             out = new FileOutputStream(
                     fileI);

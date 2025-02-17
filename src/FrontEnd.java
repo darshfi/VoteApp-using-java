@@ -62,7 +62,7 @@ public class FrontEnd {
 
         JPanel submit = new JPanel();
         JButton sub = new JButton("Submit");
-        sub.addActionListener(e -> BackEnd.submitVote());
+        sub.addActionListener(_ -> BackEnd.submitVote());
         submit.setLayout(new GridLayout(1, 1));
         submit.setBackground(new Color(0xA9EF78));
         submit.add(sub);
