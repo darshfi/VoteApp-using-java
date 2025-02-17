@@ -15,8 +15,7 @@ public class FrontEnd {
         la.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         la.getContentPane().setBackground(new Color(0xA9EF78));
         la.setLayout(new GridLayout(1, 1));
-        la.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        la.setUndecorated(true);
+        la.setExtendedState(JFrame.MAXIMIZED_BOTH);la.setUndecorated(true);
         la.setVisible(true);
         la.setFocusable(false);
 
@@ -37,7 +36,6 @@ public class FrontEnd {
         menu.add(close);
         bar.add(menu);
         la.setJMenuBar(bar);
-
         addVotingOptions(main);
         BackEnd.initialize();
         la.add(main);
